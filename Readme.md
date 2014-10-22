@@ -22,7 +22,7 @@
 #####查詢作業#####
 <img src=https://pbs.twimg.com/media/B0hV9JhCQAEO8BA.jpg>
 #####問題回報作業#####
-<img src=https://pbs.twimg.com/media/B0hV9M-CIAA6ehN.jpg>
+<img src=https://pbs.twimg.com/media/B0iQudsCQAAFzwE.jpg>
 ####使用案例個別活動圖####
 #####客戶基本資料作業#####
 <img src=https://pbs.twimg.com/media/B0hQUgPCMAAPxHD.jpg>
@@ -40,7 +40,7 @@
 #####查詢作業#####
 <img src=https://pbs.twimg.com/media/B0hWCNrCIAA6wwu.jpg>
 #####問題回報作業#####
-<img src=https://pbs.twimg.com/media/B0hWCI7CcAAv7Vo.jpg>
+<img src=https://pbs.twimg.com/media/B0iQuMCCcAAGCin.jpg>
 ####系統初步類別圖####
 <img src="https://pbs.twimg.com/media/B0hOEc9CEAA-oNe.jpg:large">
 ####使用案例個別類別圖####
