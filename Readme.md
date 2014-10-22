@@ -52,3 +52,12 @@
 <img src=https://pbs.twimg.com/media/B0hPbPbCUAA8tkg.jpg>
 #####問題回報作業#####
 <img src=https://pbs.twimg.com/media/B0hPbBWCcAMjmuS.jpg>
+####個別英文名稱事件對應####
+#####客戶基本資料作業#####
+<img src=https://pbs.twimg.com/media/B0hYKDGCEAAOTeL.jpg>
+#####定位作業#####
+<img src=https://pbs.twimg.com/media/B0hYKIPCUAIEE0e.jpg>
+#####查詢作業#####
+<img src=https://pbs.twimg.com/media/B0hYKKoCcAAa-Yd.jpg>
+#####問題回報作業#####
+<img src=https://pbs.twimg.com/media/B0hYJ7iCUAA2jeq.jpg>
