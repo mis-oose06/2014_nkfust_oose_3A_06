@@ -62,6 +62,14 @@
 #####問題回報作業#####
 <img src=https://pbs.twimg.com/media/B1CkDoHCQAAJCST.jpg>
 ####個別案例循序圖####
+#####客戶基本資料作業#####
+<img src=https://images.plurk.com/HSC6a110j5S3302ILCLbD.jpg>
+#####定位作業#####
+<img src=https://images.plurk.com/2QI3vTdsEceJT1EQuDIc2r.jpg>
+#####查詢作業#####
+<img src=https://images.plurk.com/2gl1qZkwKlSlkYHbmKZtIa.jpg>
+#####問題回報作業#####
+<img src=https://images.plurk.com/4qX770vRPKBsQ2y0cBS2WC.jpg>
 ####個別名稱事件合約####
 #####客戶基本資料作業#####
 <img src=https://pbs.twimg.com/media/B1CkgU9CMAAA_jv.jpg>
