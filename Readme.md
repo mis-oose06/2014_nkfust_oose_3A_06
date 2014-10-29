@@ -42,7 +42,7 @@
 #####問題回報作業#####
 <img src=https://pbs.twimg.com/media/B1F8R2yCcAEF1A-.jpg>
 ####系統初步類別圖####
-<img src="https://pbs.twimg.com/media/B1E94rBCEAAva7S.jpg:large">
+<img src="https://pbs.twimg.com/media/B1GOvBFCUAA_bIf.jpg:large">
 ####使用案例個別類別圖####
 #####客戶基本資料作業#####
 <img src=https://pbs.twimg.com/media/B1F8g79CYAA2K4j.jpg>
