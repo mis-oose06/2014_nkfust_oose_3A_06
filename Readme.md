@@ -82,3 +82,5 @@
 <img src=https://pbs.twimg.com/media/B1F_xutCMAA_ucR.jpg>
 #####問題回報作業#####
 <img src=https://pbs.twimg.com/media/B1F_xgTCQAAZG_N.jpg>
+#####強韌圖#####
+<img src=https://pbs.twimg.com/media/B4-qF8mCMAA0izK.jpg:large>
