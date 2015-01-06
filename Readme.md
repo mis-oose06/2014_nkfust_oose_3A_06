@@ -86,3 +86,10 @@
 <img src=https://pbs.twimg.com/media/B4-qF8mCMAA0izK.jpg:large>
 #####ER model#####
 <img src=https://pbs.twimg.com/media/B4-zEffCMAMYlGV.png>
+#####程式碼(FB登入)#####
+<img src=https://images.plurk.com/r9VS8VWYZLOBIaaiDpIqz.jpg>
+<img src=https://images.plurk.com/QBemHxod6Xdq2zjLSBcjH.jpg>
+<img src=https://images.plurk.com/3578GGPFPUC8irkRm2HzGm.jpg>
+<img src=https://images.plurk.com/zryYSVaX4MnpFJ2myliRE.jpg>
+<img src=https://images.plurk.com/5a6oSTcb2fcWUfu3etRdEc.jpg>
+<img src=https://images.plurk.com/3AKI0FaEP00SBlIAkNAhuh.jpg>
