@@ -1,0 +1,84 @@
+(function (d, s, id, debug) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_TW/all" + (debug ? "/debug" : "") + ".js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk', false));
+
+window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : 'YOUR_APP_ID',                        // App ID from the app dashboard
+      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+ 
+    // Additional initialization code such as adding Event Listeners goes here
+};
+ 
+// Load the SDK asynchronously
+(function(d, s, id){
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) {return;}
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/en_US/all.js";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+<script type="text/javascript" src="//connect.facebook.net/zh_TW/all.js"></script>
+
+function FacebookAppInit() { //初始化Facebook js sdk
+    FB.init({
+        appId: window.fbApp.id, // App ID
+        status: true, // check login status
+        cookie: true, // enable cookies to allow the server to access the session
+        oauth: true, // enable OAuth 2.0
+        xfbml: true,  // parse XFBML
+        frictionlessRequests: true
+    });
+}
+
+FB.getLoginStatus(function (response) {
+    if (response.status === 'connected') {
+        //已登入-可取得UserId和accessToken
+        var uid = response.authResponse.userID;
+        var accessToken = response.authResponse.accessToken;
+    } else if (response.status === 'not_authorized') {
+        //尚未通過第一階段授權
+    } else {
+        //沒登入FB使用者
+        alert("請先登入Facebook網站");
+    }
+});
+
+window.fbApp = {
+    id: '1234567891011',
+    scope: 'user_about_me,publish_stream,email,user_likes,friends_photos,read_stream',
+    LoginRedirectUrl: '{放置從Facebook網站授權完後需要回到的頁面網址}',
+    getLoginUrl: function () {  //取得Facebook授權頁面網址
+        var login_url = "https://www.facebook.com/dialog/oauth?";
+        login_url += ("client_id=" + this.id);
+        login_url += ("&redirect_uri=" + this.LoginRedirectUrl);
+        login_url += ("&scope=" + this.scope);
+        return login_url;
+    },
+};
+
+FB.getLoginStatus(function (response) {
+        //取得授權頁面網址
+    var loginUrl = window.fbApp.getLoginUrl();
+    if (response.status === 'connected') {
+        //已登入-可取得UserId和accessToken
+        var uid = response.authResponse.userID;
+        var accessToken = response.authResponse.accessToken;
+    } else if (response.status === 'not_authorized') {
+        //尚未通過第一階段授權
+        window.location = loginUrl; //導向至授權頁面
+    } else {
+        //沒登入FB使用者
+        alert("請先登入Facebook網站");
+        window.location = loginUrl; //導向至授權頁面
+    }
+});
