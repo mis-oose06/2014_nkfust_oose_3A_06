@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.autoInitializePage = false;
+      $.mobile.hashListeningEnabled = false;
+    });
+
+    function mobileInitPage() {
+      $.mobile.hashListeningEnabled = true;
+      $.mobile.initializePage();
+    };
+  </script>
+  <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Uncomment the following to include cordova in your android project -->
+  <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  <!-- GK Loader use RequireJS to load module -->
+  <script src="http://requirejs.org/docs/release/2.1.11/minified/require.js"></script>
+  <!--Plug in GK-->
+  <script src="http://jqmdesigner.appspot.com/components/jquery.gk/jquery.gk.min.js"></script>
+  <!-- Load GK components -->
+  <script components="http://jqmdesigner.appspot.com/components/gk-ext/gmap.html,http://jqmdesigner.appspot.com/components/gk-ext/image.html" callback="mobileInitPage" src="http://jqmdesigner.appspot.com/components/gk-loader/gk-loader.js"></script>
+  <title>EZo App</title>
+</head>
+
+<body gk-app>
+  <!-- Page: login  -->
+  <div id="login" data-role="page">
+    <div data-role="header" data-position="fixed">
+      <h3>Where's friend</h3>
+    </div>
+    <div role="main" class="ui-content">
+      <a class="ui-btn ui-icon-user ui-btn-icon-left ui-btn-b" href="#position" style="width:80%;height:20px">Facebook帳號登入</a>
+      <img style="width:100%;height:290px" src="http://images.smh.com.au/2014/03/12/5254455/friend_729-620x349.jpg" is="image">
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="a">
+      <h3></h3>
+    </div>
+  </div>
+  <!-- Page: position  -->
+  <div id="position" data-role="page">
+    <div data-role="header" data-position="fixed">
+      <h3>Where's friend</h3>
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="#friendlist">好友清單</a>
+          </li>
+          <li>
+            <a href="#searchfriend">指定好友</a>
+          </li>
+          <li>
+            <a href="#nearfriends">附近好友</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div role="main" class="ui-content">
+      <div is="gmap" style="width:100%;height:310px;" zoom="12" address="nanzi, TW"></div>
+    </div>
+    <div data-position="fixed" data-role="footer">
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a data-icon="location">定位</a>
+          </li>
+          <li>
+            <a data-icon="comment" href="#reportproblem">問題</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Page: friendlist  -->
+  <div id="friendlist" data-role="page">
+    <div data-role="header" data-position="fixed">
+      <h3>Where's friend</h3>
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="#friendlist">好友清單</a>
+          </li>
+          <li>
+            <a href="#searchfriend">指定好友</a>
+          </li>
+          <li>
+            <a href="#nearfriends">附近好友</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" data-position="fixed">
+      <h3>Where's friend</h3>
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="#friendlist">好友清單</a>
+          </li>
+          <li>
+            <a href="#searchfriend">指定好友</a>
+          </li>
+          <li>
+            <a href="#nearfriends">附近好友</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div role="main" class="ui-content">
+      <div class="ui-field-contain">
+        <label for="gk-1224m1BB"></label>
+        <textarea id="gk-1224m1BB" name style="width:100%;height:280px" data-autogrow="false"></textarea>
+      </div>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="location" href="#position">定位</a>
+        </li>
+        <li>
+          <a data-icon="comment" href="#reportproblem">問題</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Page: searchfriend  -->
+  <div id="searchfriend" data-role="page">
+    <div data-role="header" data-position="fixed">
+      <h3>Where's friend</h3>
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="#friendlist">好友清單</a>
+          </li>
+          <li>
+            <a href="#searchfriend">指定好友</a>
+          </li>
+          <li>
+            <a href="#nearfriends">附近好友</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div role="main" class="ui-content">
+      <div class="ui-field-contain">
+        <label for="gk-12240sZH"></label>
+        <input type="search" name id="gk-12240sZH">
+      </div>
+      <div is="gmap" style="width:100%;height:240px;" zoom="12" address="Nanzi, TW"></div>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="location" href="#position">定位</a>
+        </li>
+        <li>
+          <a data-icon="comment" href="#reportproblem">問題</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Page: nearfriends  -->
+  <div id="nearfriends" data-role="page">
+    <div data-role="header" data-position="fixed">
+      <h3>Where's friend</h3>
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="#friendlist">好友清單</a>
+          </li>
+          <li>
+            <a href="#searchfriend">指定好友</a>
+          </li>
+          <li>
+            <a href="#nearfriends">附近好友</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div role="main" class="ui-content">
+      <div is="gmap" style="width:100%;height:310px;" zoom="12" address="Qianzhen, TW"></div>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="location" href="#position">定位</a>
+        </li>
+        <li>
+          <a data-icon="comment" href="#reportproblem">問題</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Page: reportproblem  -->
+  <div id="reportproblem" data-role="page">
+    <div data-role="header" data-position="fixed">
+      <h3>Where's friend</h3>
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="#friendlist">好友清單</a>
+          </li>
+          <li>
+            <a href="#searchfriend">指定好友</a>
+          </li>
+          <li>
+            <a href="#nearfriends">附近好友</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div role="main" class="ui-content">
+      <div class="ui-field-contain">
+        <label for="gk-1224T0dX">問題回報</label>
+        <input type="text" name id="gk-1224T0dX" style="width:100%;height:260px">
+      </div>
+      <a class="ui-btn">送出</a>
+    </div>
+  </div>
+</body>
+
+</html>
